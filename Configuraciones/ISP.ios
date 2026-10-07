@@ -1,0 +1,26 @@
+
+hostname ISP1
+
+ip name-server 192.168.100.1
+
+ip route 0.0.0.0 0.0.0.0 192.168.100.1
+
+Access-list 1 permit 10.0.0.0 0.255.255.255
+
+ip nat inside source list 1 int g1/0 overload
+
+ip route 10.0.0.0 255.0.0.0 10.0.0.2
+
+interface GigabitEthernet0/0
+description Link ISP1 To PfSenseFW
+ip address 10.0.0.1 255.255.255.252
+ip nat inside
+no shutdown
+exit
+
+interface GigabitEthernet1/0
+description Link ISP1 To Internet
+ip address 192.168.100.125 255.255.255.0
+ip nat outside
+no shutdown
+exit

@@ -1,0 +1,99 @@
+
+----------------------------------- LAN-Security-SW.ios ----------------------------------- 
+
+conf t
+hostname SecuritySW
+username admin privilege 15 secret LabSec
+enable secret LabSec
+banner motd $--- Unauthorized Access is Strictly Forbidden ---$
+ip domain-name LabSec.Dev
+ip ssh version 2
+crypto key generate rsa modulus 4096
+
+line vty 0 4
+login local
+transport input ssh
+service password-encryption
+
+vlan 40
+name Security
+
+ip default-gateway 10.10.40.1
+ip name-server 10.10.10.10 8.8.8.8
+
+interface vlan 1
+ip address 10.10.40.254 255.255.255.0
+no shutdown
+exit
+
+interface e0/0 
+description Link to PFSenseFW
+switchport port-security maximum 3
+switchport port-security mac-address sticky
+switchport port-security violation restrict
+duplex full
+no shutdown
+exit
+
+interface e0/1
+description Security lan
+switchport port-security maximum 3
+switchport port-security mac-address sticky
+switchport port-security violation restrict
+duplex full
+no shutdown
+exit
+
+interface e0/2
+description Security lan
+switchport port-security maximum 3
+switchport port-security mac-address sticky
+switchport port-security violation restrict
+duplex full
+no shutdown
+exit
+
+interface e0/3
+description Security lan
+switchport port-security maximum 3
+switchport port-security mac-address sticky
+switchport port-security violation restrict
+duplex full
+no shutdown
+exit
+
+interface e1/0
+description Security lan
+switchport port-security maximum 3
+switchport port-security mac-address sticky
+switchport port-security violation restrict
+duplex full
+no shutdown
+exit
+
+interface e1/1
+description Security lan
+switchport port-security maximum 3
+switchport port-security mac-address sticky
+switchport port-security violation restrict
+duplex full
+no shutdown
+exit
+
+interface e1/2
+description Security lan
+switchport port-security maximum 3
+switchport port-security mac-address sticky
+switchport port-security violation restrict
+duplex full
+no shutdown
+exit
+
+interface e1/3
+description Security lan
+switchport port-security maximum 3
+switchport port-security mac-address sticky
+switchport port-security violation restrict
+duplex full
+no shutdown
+exit
