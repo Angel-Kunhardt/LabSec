@@ -31,19 +31,5 @@ Las máquinas virtuales proporcionan los servicios y endpoints necesarios para c
 
 El objetivo no es únicamente desplegar servicios, sino utilizar la infraestructura como una plataforma experimental. Los componentes pueden modificarse, reemplazarse o reutilizarse dependiendo del escenario que se quiera estudiar.
 
-Sobre esta infraestructura se pueden construir laboratorios de:
-
-Active Directory
-Windows Server
-Networking
-Seguridad de endpoints
-SIEM y SOC
-Vulnerability Management
-Análisis de tráfico
-Incident Response
-Hardening
-Malware Analysis en entornos aislados
-Automatización con PowerShell y Python
-Pruebas de herramientas de seguridad
 
 El laboratorio está diseñado para evolucionar progresivamente a medida que se incorporan nuevos servicios, herramientas y escenarios.
