@@ -1,5 +1,8 @@
 
 ----------------------------------- LAN-Servers-SW.ios ----------------------------------- 
+// Este archivo contiene la configuración del switch de servidores (ServersSW) en la red LAN.
+// La configuración incluye la asignación de direcciones IP, VLANs, seguridad de puerto y acceso remoto mediante SSH.
+
 
 conf t
 hostname ServersSW

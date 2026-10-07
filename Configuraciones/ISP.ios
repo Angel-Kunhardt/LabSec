@@ -1,4 +1,9 @@
 
+----------------------------------- ISP.ios ----------------------------------- 
+// Este archivo contiene la configuración del router ISP1.
+// El cual intenta simular un proveedor de servicios de internet (ISP) que proporciona conectividad a la red LAN y a Internet.
+// La configuración incluye la asignación de direcciones IP, rutas estáticas, NAT y listas de acceso para permitir el tráfico desde la red LAN hacia Internet.
+
 hostname ISP1
 
 ip name-server 192.168.100.1
