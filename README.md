@@ -1,7 +1,7 @@
 
 -LabSec Lab Environment
 
-Laboratorio de ciberseguridad e infraestructura diseñado como una red y sandbox general para desarrollar múltiples laboratorios y escenarios de prueba.
+Laboratorio de ciberseguridad e infraestructura diseñado como una red y un sandbox general para desarrollar múltiples laboratorios y escenarios de prueba.
 
 El entorno busca simular una pequeña infraestructura empresarial, proporcionando una base reutilizable sobre la cual experimentar con administración de sistemas, redes, ciberseguridad, monitoreo, detección de amenazas y respuesta a incidentes.
 
@@ -10,9 +10,9 @@ La infraestructura combina máquinas virtuales y dispositivos de red virtualizad
 Objetivos
 
 Crear una infraestructura de red reutilizable para múltiples laboratorios.
-Practicar administración de Windows Server y Active Directory.
+Practicar la administración de Windows Server y Active Directory.
 Implementar y probar servicios de red como DNS y DHCP.
-Practicar segmentación, routing, firewalling y troubleshooting.
+Practicar segmentación, enrutamiento, firewalls y resolución de problemas.
 Crear escenarios controlados para pruebas de seguridad.
 Centralizar y analizar eventos mediante herramientas como Wazuh.
 Simular incidentes y practicar procesos de detección, investigación y respuesta.
