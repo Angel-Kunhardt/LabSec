@@ -7,12 +7,12 @@ La infraestructura combina máquinas virtuales con dispositivos de red virtualiz
 Objetivos.
 
 Crear una infraestructura de red reutilizable para múltiples laboratorios.
-Practicar administración de Windows Server y Active Directory.
+Practicar la administración de Windows Server y Active Directory.
 Implementar y probar servicios de red como DNS y DHCP.
-Practicar segmentación, routing, firewalling y troubleshooting.
+Practicar segmentación, enrutamiento, firewalls y resolución de problemas.
 Crear escenarios controlados para pruebas de seguridad.
 Centralizar y analizar eventos mediante herramientas como Wazuh.
-Simular incidentes y practicar procesos de detección, investigación y respuesta.
+Simular incidentes y practicar los procesos de detección, investigación y respuesta.
 Experimentar con nuevas tecnologías y herramientas sin afectar el entorno principal.
 
 -Arquitectura
