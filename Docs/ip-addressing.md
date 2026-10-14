@@ -1,5 +1,5 @@
 
------LANs-----
+----------LANs----------
 
 ---LAN-Management (10.10.10.0/24)---
 // En este segmento de red se encuentran los servidores de Active Directory, DNS y DHCP, los cuales son esenciales para la gestión y administración de la red. 
@@ -37,5 +37,16 @@ SEC01 (Linux Ubuntu Server 26.04)
 ip 10.10.40.10
 [wazuh manager, wazuh indexer, wazuh dashboard]
 
+----------LANs----------
 
 
+----------PfSense----------
+
+Int em0 (WAN) (10.0.0.2/30) -> ISP1
+Int em1 (LAN) (10.0.0.5/30)
+Int em2 (LAN) (10.10.10.1/24) -> LAN-Management
+Int em3 (LAN) (10.10.20.1/24) -> LAN-Servers
+Int em4 (LAN) (10.10.30.1/24) -> LAN-Users
+Int em5 (LAN) (10.10.40.1/24) -> LAN-Security
+
+----------PfSense----------
