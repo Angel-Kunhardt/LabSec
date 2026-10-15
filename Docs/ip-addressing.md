@@ -2,7 +2,9 @@
 ----------LANs----------
 
 ---LAN-Management (10.10.10.0/24)---
+
 // En este segmento de red se encuentran los servidores de Active Directory, DNS y DHCP, los cuales son esenciales para la gestión y administración de la red. 
+
 // Estos servicios permiten la autenticación de usuarios, la resolución de nombres de dominio y la asignación dinámica de direcciones IP a los dispositivos conectados a la red.
 
 DC01 (Windows Server 2025)
@@ -14,7 +16,9 @@ ip 10.10.10.11
 [AD DS, DNS]
 
 ---LAN-Servers (10.10.20.0/24)---
+
 // En este segmento de red se encuentran los servidores de archivos, actualizaciones y copias de seguridad, los cuales son esenciales para el almacenamiento y la gestión de datos en la red.
+
 // Estos servicios permiten a los usuarios acceder a archivos compartidos, recibir actualizaciones de software y realizar copias de seguridad de sus datos de manera segura y eficiente.
 
 SRV01 (Windows Server 2025)
@@ -23,14 +27,18 @@ ip 10.10.20.10
 
 
 ---LAN-Users (10.10.30.0/24)---
+
 // En este segmento de red se encuentran los clientes Windows 10/11, los cuales son esenciales para la interacción de los usuarios con la red y sus servicios.
 
 Clientes Windows 10/11 para testing y fines de desarrollo.
 DHCP pool: 10.10.30.10 - 10.10.30.254
 
 ---LAN-Security (10.10.40.0/24)---
+
 // En este segmento de red es donde se encuentran los servidores de seguridad, los cuales son esenciales para la protección y monitoreo de la red.
+
 // acutalmente se encuentra un servidor Linux Ubuntu 26.04 con Wazuh Manager, Wazuh Indexer y Wazuh Dashboard.
+
 // Despues agregare un servidor de seguridad adicional para pruebas y fines de desarrollo.\
 
 SEC01 (Linux Ubuntu Server 26.04)
