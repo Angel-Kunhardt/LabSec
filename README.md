@@ -16,6 +16,13 @@ Simular incidentes y practicar los procesos de detección, investigación y resp
 Experimentar con nuevas tecnologías y herramientas sin afectar el entorno principal.
 
 
+----------Arquitectura----------
+
+El laboratorio utiliza GNS3 como plataforma para la infraestructura de red, incluyendo firewall, switching, routing y segmentación mediante VLANs.
+
+Las máquinas virtuales proporcionan los servicios y endpoints necesarios para construir diferentes escenarios.
+
+
 ----------Filosofía del laboratorio----------
 
 El objetivo no es únicamente desplegar servicios, sino utilizar la infraestructura como una plataforma experimental. Los componentes pueden modificarse, reemplazarse o reutilizarse dependiendo del escenario que se quiera estudiar.
